@@ -1,0 +1,17 @@
+package com.example.demo.interfaces;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.demo.model.Person;
+
+public interface IPerson extends CrudRepository<Person, Integer> {
+
+	List<Person>findAll();
+	
+	
+	Person save(Person p);
+	
+	void delete(Person p);
+}

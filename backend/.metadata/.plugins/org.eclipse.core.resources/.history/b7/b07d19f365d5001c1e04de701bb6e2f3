@@ -1,0 +1,47 @@
+package com.example.demo.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.demo.model.Person;
+import com.example.demo.repository.PersonRepository;
+
+@Service
+public class PersonServiceImp implements PersonService{
+
+	@Autowired
+	private PersonRepository repository;
+	
+	@Override
+	public List<Person> list() {
+		
+		return repository.findAll();
+	}
+
+	@Override
+	public Person listById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Person add(Person p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Person edit(Person p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Person delete(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

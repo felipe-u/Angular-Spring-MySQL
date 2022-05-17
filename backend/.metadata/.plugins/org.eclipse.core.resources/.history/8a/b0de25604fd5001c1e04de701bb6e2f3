@@ -1,0 +1,13 @@
+package com.example.demo.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "person")
+public class Person {
+
+	@Id
+	@Column
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+}
